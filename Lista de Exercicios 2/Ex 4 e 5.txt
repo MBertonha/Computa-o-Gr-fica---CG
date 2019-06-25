@@ -1,0 +1,13 @@
+4) 
+Evidenciamos os pixels pretos através do fechamento e aplicamos o filtro de reconstrução, depois subitraimos a imagem gerada da imagem original
+para obtermos as bordas dos números 
+
+
+5)
+Seria necessário criar um.marcador na etiqueta para destaca-la e depois 
+inverter a imagem original.Posteriormente 
+deve-se 
+evidenciar os pixels brancos através da abertura e aplicar um filtro de reconstrução. Subitraimos a imagem reconstruida 
+da imagem com a etiqueta destacada e 
+aplicamos o filtro otsu
+ para realçar a escrita e por fim invertemos novamente a imagem.
