@@ -1,0 +1,18 @@
+1) Descreva quais são as alterações visíveis em uma imagem quando se utiliza
+a operação morfológica da Erosão e da Dilatação
+
+Quando se utiliza a operação morfológica de erosão, basicamente se "encolhe" 
+a imagem, para cada pixel branco, se o número de vizinhos brancos for menor 
+do que um valor limiar "N" o pixel é invertido.
+Enquanto que na dilatação, há a im´pressão de que a imagem aumentou, reduzindo 
+os pequenos buracos que podem haver, para cada pixel preto, se o número de 
+vizinhos brancos for maior do que um valor limiar, N, opixelé invertido.
+
+2) Como é possivel realizar a detecção de bordas a partir da morfologia matemática?
+Explique as operações necessárias na imagem para obter o resultado
+
+Para se obter a detecção de bordas pode-se utilizar o gradiente morfológico que é composto
+de uma imagem original, um elemento estruturante, a operação de dilatação e erosão. 
+Para isso é necessário que se utilize a operação de dilatação entre a imagem e o elemento estruturante
+gerando uma imagem X e posteriormente utilize a operação de erosao entre a imagem e o elemento, gerando
+a imagem Y. Por fim podemos subtrair a imagem Y da imagem X (X - Y)
